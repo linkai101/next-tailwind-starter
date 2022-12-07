@@ -1,8 +1,9 @@
 import '../styles/globals.css';
 
 import Head from 'next/head';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
@@ -12,4 +13,4 @@ function MyApp({ Component, pageProps }) {
   </>;
 }
 
-export default MyApp
+export default MyApp;
