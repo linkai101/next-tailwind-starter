@@ -1,4 +1,10 @@
 import './globals.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'next-tailwind-starter',
+  description: 'A Next.js + TypeScript + Tailwind starter by @linkai101',
+};
 
 export default function RootLayout({
   children,
@@ -8,8 +14,7 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>next-tailwind-starter</title>
-        <meta name="description" content="by @linkai101 on github" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </head>
       <body>{children}</body>
     </html>
